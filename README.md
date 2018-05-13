@@ -1,4 +1,4 @@
-## Sassart is a simply program wich create empty sass project with 7-1 pattern. 
+## Sassart is a simply program which create empty sass project with 7-1 pattern. 
 Sassstart created directory three:
 
 + +project_name
