@@ -1,5 +1,5 @@
 Sassart is a simply program wich create empty sass project with 7-1 pattern. Sassstart created directory three:
-+project_name\n
++project_name
  -index.html
  +css
  +js
