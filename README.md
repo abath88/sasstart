@@ -1,7 +1,7 @@
-##Sassart is a simply program wich create empty sass project with 7-1 pattern. Sassstart created directory three:
+## Sassart is a simply program wich create empty sass project with 7-1 pattern. Sassstart created directory three:
 + +project_name
- - -index.html
- + +css
+..- -index.html
+..+ +css
  + +js
  + +img
  + +sass
@@ -22,4 +22,4 @@
   + +themes
   + +vendors
 
-##Some from this files are created with basic configuration.
+## Some from this files are created with basic configuration.
