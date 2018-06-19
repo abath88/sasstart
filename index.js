@@ -2,21 +2,21 @@ var fs = require('fs');
 var dir = '';
 
 var variables = '// COLORS\n$color-primary:\n\n$color-secondary:\n\n' +
-                '// FONT\n\n$default - font - size: 1.6rem;\n';
+                '// FONT\n\n$default-font-size: 1.6rem;\n';
 
 var mixins = '@mixin respond($breakpoint) {\n@if $breakpoint == phone {\n' +
-            '@media only screen and(max - width: 37.5em) { @content };    //600px\n' +
-            '}\n@if $breakpoint == tab - port {\n@media only screen and(max - width: 56.25em)'+ 
-            '{ @content };     //900px\n}\n@if $breakpoint == tab - land {\n' +
-            '@media only screen and(max - width: 75em) { @content };    //1200px\n'+
-            '}\n@if $breakpoint == big - desktop {\n' +
-            '@media only screen and(min - width: 112.5em) { @content };    //1800\n' +
+            '@media only screen and(max-width: 37.5em) { @content };    //600px\n' +
+            '}\n@if $breakpoint == tab-port {\n@media only screen and(max-width: 56.25em)'+ 
+            '{ @content };     //900px\n}\n@if $breakpoint == tab-land {\n' +
+            '@media only screen and(max-width: 75em) { @content };    //1200px\n'+
+            '}\n@if $breakpoint == big-desktop {\n' +
+            '@media only screen and(min-width: 112.5em) { @content };    //1800\n' +
             '}\n}\n';
 
-var base = '*,\n*::after,\n*::before {\nmargin: 0;\npadding: 0;\nbox - sizing: inherit;\n}\n\n' +
-    'html {\nfont - size: 62.5 %;\n@include respond(tab - land) {\nfont - size: 56.25 %;\n}\n\n' +
-    '@include respond(tab - port) {\nfont - size: 50 %;\n}\n\n@include respond(big - desktop)' +
-    '{\nfont - size: 75 %;\n}\n}\n'; 
+var base = '*,\n*::after,\n*::before {\nmargin: 0;\npadding: 0;\nbox-sizing: inherit;\n}\n\n' +
+    'html {\nfont-size: 62.5 %;\n@include respond(tab-land) {\nfont-size: 56.25 %;\n}\n\n' +
+    '@include respond(tab-port) {\nfont-size: 50 %;\n}\n\n@include respond(big-desktop)' +
+    '{\nfont-size: 75 %;\n}\n}\n'; 
 
 var main = '@import "abstracts/functions";\n@import "abstracts/mixins";\n' +
             '@import "abstracts/variables";\n\n@import "base/animations";\n' +
